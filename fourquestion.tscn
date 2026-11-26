@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://d3mndjcvxb8w"]
+
+[ext_resource type="Script" uid="uid://jcsrej7x4es8" path="res://fourquestion.gd" id="1_pt740"]
+
+[node name="Fourquestion" type="Control" unique_id=815689988]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pt740")
+
+[node name="Label" type="Label" parent="." unique_id=461645451]
+layout_mode = 0
+offset_right = 156.0
+offset_bottom = 175.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 70
+text = "4."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=738120756]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 25.0
+offset_right = 782.0
+offset_bottom = 220.0
+mouse_filter = 0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 70
+text = "Click
+The Answer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1529555750]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 550.0
+offset_right = 320.0
+offset_bottom = 646.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 70
+text = "Lives: "
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=235443235]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 81.0
+offset_right = 1120.0
+offset_bottom = 177.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Incorrect!"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1381300707]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 270.0
+offset_right = 474.0
+offset_bottom = 399.0
+theme_override_colors/font_color = Color(0.99999994, 0.03791524, 0.12826127, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Out of Order"
+
+[node name="Button2" type="Button" parent="." unique_id=470980943]
+layout_mode = 0
+offset_left = 621.0
+offset_top = 268.0
+offset_right = 937.0
+offset_bottom = 397.0
+theme_override_colors/font_color = Color(0.99999994, 0.03791524, 0.12826127, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Out of Order"
+
+[node name="Button3" type="Button" parent="." unique_id=851279083]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 421.0
+offset_right = 475.0
+offset_bottom = 550.0
+theme_override_colors/font_color = Color(0.99999994, 0.03791524, 0.12826127, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Out of Order"
+
+[node name="Button4" type="Button" parent="." unique_id=808389411]
+layout_mode = 0
+offset_left = 624.0
+offset_top = 424.0
+offset_right = 940.0
+offset_bottom = 553.0
+theme_override_colors/font_color = Color(0.99999994, 0.03791524, 0.12826127, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Out of Order"
+
+[connection signal="gui_input" from="Label2" to="." method="_on_label_2_gui_input"]
+[connection signal="mouse_entered" from="Label2" to="." method="_on_label_2_mouse_entered"]
+[connection signal="mouse_exited" from="Label2" to="." method="_on_label_2_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

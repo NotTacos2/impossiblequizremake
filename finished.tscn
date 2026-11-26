@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://bvgs2dvbdd0a3"]
+
+[ext_resource type="Script" uid="uid://cbev31n8n5ud3" path="res://finished.gd" id="1_cpt7a"]
+
+[node name="Finished" type="Control" unique_id=1508876761]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cpt7a")
+
+[node name="Label" type="Label" parent="." unique_id=1047011746]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 114.0
+offset_right = 998.0
+offset_bottom = 177.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 45
+text = "Congrats, you have passed the quiz!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=489194700]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 196.0
+offset_right = 827.0
+offset_bottom = 259.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 45
+text = "You had 3 lives left"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1510088562]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 277.0
+offset_right = 737.0
+offset_bottom = 340.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 45
+text = "Play again?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1707385277]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 354.0
+offset_right = 750.0
+offset_bottom = 436.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Yes!"
+
+[node name="Button2" type="Button" parent="." unique_id=1108590373]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 454.0
+offset_right = 754.0
+offset_bottom = 536.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "No"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://0pkdhel0hm41"]
+
+[ext_resource type="Script" uid="uid://d23llm1113ald" path="res://firstquestion.gd" id="1_in3pk"]
+
+[node name="Firstquestion" type="Control" unique_id=438262134]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_in3pk")
+
+[node name="Label" type="Label" parent="." unique_id=308354251]
+layout_mode = 0
+offset_right = 142.0
+offset_bottom = 119.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "1."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1867282010]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 536.0
+offset_right = 274.0
+offset_bottom = 655.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Lives: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=1507168043]
+layout_mode = 0
+offset_left = 896.0
+offset_top = 116.0
+offset_right = 1168.0
+offset_bottom = 235.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 45
+text = "Incorrect!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=499609403]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 16.0
+offset_right = 1029.0
+offset_bottom = 135.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "How many holes in a polo?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=200684012]
+layout_mode = 0
+offset_left = 215.0
+offset_top = 242.0
+offset_right = 469.0
+offset_bottom = 348.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "One"
+
+[node name="Button2" type="Button" parent="." unique_id=1867360182]
+layout_mode = 0
+offset_left = 637.0
+offset_top = 241.0
+offset_right = 891.0
+offset_bottom = 347.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Two"
+
+[node name="Button3" type="Button" parent="." unique_id=2044687727]
+layout_mode = 0
+offset_left = 215.0
+offset_top = 400.0
+offset_right = 469.0
+offset_bottom = 506.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Three"
+
+[node name="Button4" type="Button" parent="." unique_id=1204854791]
+layout_mode = 0
+offset_left = 635.0
+offset_top = 402.0
+offset_right = 889.0
+offset_bottom = 508.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Four"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

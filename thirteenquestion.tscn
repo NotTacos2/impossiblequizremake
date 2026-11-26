@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://cdwcukp6rl24b"]
+
+[ext_resource type="Script" uid="uid://dxf4nl4ssxeop" path="res://thirteenquestion.gd" id="1_3netn"]
+
+[node name="Thirteenquestion" type="Control" unique_id=708000897]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3netn")
+
+[node name="Label" type="Label" parent="." unique_id=1741829885]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 26.0
+offset_right = 112.0
+offset_bottom = 109.0
+mouse_filter = 0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "13."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=2087610578]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 44.0
+offset_right = 660.0
+offset_bottom = 178.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "24 - 7 = ?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=457173801]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 511.0
+offset_right = 279.0
+offset_bottom = 645.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 55
+text = "Lives: "
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=2083039688]
+layout_mode = 0
+offset_left = 949.0
+offset_top = 168.0
+offset_right = 1089.0
+offset_bottom = 210.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 30
+text = "Incorrect!"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1560572023]
+layout_mode = 0
+offset_left = 233.0
+offset_top = 245.0
+offset_right = 433.0
+offset_bottom = 339.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "18"
+
+[node name="Button5" type="Button" parent="." unique_id=1181730688]
+layout_mode = 0
+offset_left = 982.0
+offset_top = 551.0
+offset_right = 1152.0
+offset_bottom = 642.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Skip?"
+
+[node name="Button2" type="Button" parent="." unique_id=1445674194]
+layout_mode = 0
+offset_left = 629.0
+offset_top = 245.0
+offset_right = 829.0
+offset_bottom = 339.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "2"
+
+[node name="Button4" type="Button" parent="." unique_id=978733028]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 390.0
+offset_right = 822.0
+offset_bottom = 484.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 57
+text = "Walrus"
+
+[node name="Button3" type="Button" parent="." unique_id=983590287]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 394.0
+offset_right = 434.0
+offset_bottom = 488.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "16 * 931"
+
+[connection signal="gui_input" from="Label" to="." method="_on_label_gui_input"]
+[connection signal="mouse_entered" from="Label" to="." method="_on_label_mouse_entered"]
+[connection signal="mouse_exited" from="Label" to="." method="_on_label_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://b82knwqt5c8wn"]
+
+[ext_resource type="Script" uid="uid://ba5r88c683ocn" path="res://fourteenquestion.gd" id="1_3nf2m"]
+
+[node name="Fourteenquestion" type="Control" unique_id=656389277]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3nf2m")
+
+[node name="Label" type="Label" parent="." unique_id=225976510]
+layout_mode = 0
+offset_right = 152.0
+offset_bottom = 137.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "14."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=636292433]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 41.0
+offset_right = 804.0
+offset_bottom = 178.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Deal or no deal?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1158384971]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 522.0
+offset_right = 293.0
+offset_bottom = 638.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Lives: "
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=87410740]
+layout_mode = 0
+offset_left = 944.0
+offset_top = 169.0
+offset_right = 1084.0
+offset_bottom = 211.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 30
+text = "Incorrect!"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1759395977]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 260.0
+offset_right = 445.0
+offset_bottom = 351.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Deal!"
+
+[node name="Button3" type="Button" parent="." unique_id=112020513]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 402.0
+offset_right = 445.0
+offset_bottom = 493.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Seal!"
+
+[node name="Button2" type="Button" parent="." unique_id=1185051855]
+layout_mode = 0
+offset_left = 619.0
+offset_top = 262.0
+offset_right = 830.0
+offset_bottom = 353.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "No Deal!"
+
+[node name="Button5" type="Button" parent="." unique_id=400989893]
+layout_mode = 0
+offset_left = 1005.0
+offset_top = 573.0
+offset_right = 1151.0
+offset_bottom = 646.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Skip?"
+
+[node name="Button4" type="Button" parent="." unique_id=1982023890]
+layout_mode = 0
+offset_left = 619.0
+offset_top = 397.0
+offset_right = 832.0
+offset_bottom = 488.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "No Seal!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

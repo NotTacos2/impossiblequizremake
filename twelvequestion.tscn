@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://dsu7c6kiax8yp"]
+
+[ext_resource type="Script" uid="uid://cyoyelbcbxmho" path="res://twelvequestion.gd" id="1_au2x2"]
+
+[node name="Twelvequestion" type="Control" unique_id=941791063]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_au2x2")
+
+[node name="Label" type="Label" parent="." unique_id=2086195187]
+layout_mode = 0
+offset_right = 145.0
+offset_bottom = 137.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "12."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1320184871]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 67.0
+offset_right = 913.0
+offset_bottom = 208.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "What is the 7th letter of the
+alphabet?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=657605090]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 532.0
+offset_right = 285.0
+offset_bottom = 626.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Lives: "
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=2043311286]
+layout_mode = 0
+offset_left = 938.0
+offset_top = 182.0
+offset_right = 1078.0
+offset_bottom = 224.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 30
+text = "Incorrect!"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=85710480]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 278.0
+offset_right = 445.0
+offset_bottom = 369.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "G"
+
+[node name="Button2" type="Button" parent="." unique_id=957190113]
+layout_mode = 0
+offset_left = 663.0
+offset_top = 282.0
+offset_right = 844.0
+offset_bottom = 373.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "H"
+
+[node name="Button3" type="Button" parent="." unique_id=2020919607]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 431.0
+offset_right = 442.0
+offset_bottom = 522.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "I"
+
+[node name="Button4" type="Button" parent="." unique_id=896108296]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 431.0
+offset_right = 845.0
+offset_bottom = 522.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "J"
+
+[node name="Button5" type="Button" parent="." unique_id=1628128251]
+layout_mode = 0
+offset_left = 994.0
+offset_top = 566.0
+offset_right = 1150.0
+offset_bottom = 643.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 35
+text = "Skip?"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

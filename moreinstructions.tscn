@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bas6kgpoodpm5"]
+
+[ext_resource type="Script" uid="uid://bok6d26bjeqti" path="res://moreinstructions.gd" id="1_vhjpn"]
+
+[node name="Moreinstructions" type="Control" unique_id=314655222]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vhjpn")
+
+[node name="Button" type="Button" parent="." unique_id=2040729656]
+layout_mode = 0
+offset_right = 208.0
+offset_bottom = 115.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 48
+text = "Go Back"
+
+[node name="Button2" type="Button" parent="." unique_id=1567651462]
+layout_mode = 0
+offset_left = 942.0
+offset_right = 1150.0
+offset_bottom = 115.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 48
+text = "Menu"
+
+[node name="Label" type="Label" parent="." unique_id=334095715]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 153.0
+offset_right = 199.0
+offset_bottom = 237.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 48
+text = "Skips"
+
+[node name="Label2" type="Label" parent="." unique_id=1694049141]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 239.0
+offset_right = 1120.0
+offset_bottom = 428.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 32
+text = "Complete 10 questions correctly, and get a SKIP!
+Skips allows you to skip a question if you don't know the answer. "
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

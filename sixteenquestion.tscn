@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://bc8tgxoisukts"]
+
+[ext_resource type="Script" uid="uid://bdkmtrqchitb2" path="res://sixteenquestion.gd" id="1_3b5q1"]
+
+[node name="Sixteenquestion" type="Control" unique_id=1231230012]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3b5q1")
+
+[node name="Label" type="Label" parent="." unique_id=1051603035]
+layout_mode = 0
+offset_right = 145.0
+offset_bottom = 146.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "16."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1007281640]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 4.0
+offset_right = 409.0
+offset_bottom = 150.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "The choice is yours"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=700235394]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 508.0
+offset_right = 273.0
+offset_bottom = 624.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 55
+text = "Lives: "
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=1701392263]
+layout_mode = 0
+offset_left = 931.0
+offset_top = 155.0
+offset_right = 1071.0
+offset_bottom = 197.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 30
+text = "Incorrect!"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1672420455]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 231.0
+offset_right = 462.0
+offset_bottom = 333.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 55
+text = "+1 Life"
+
+[node name="Button2" type="Button" parent="." unique_id=793112649]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 389.0
+offset_right = 460.0
+offset_bottom = 491.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 55
+text = "Escape!"
+
+[node name="Button3" type="Button" parent="." unique_id=545007319]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 239.0
+offset_right = 820.0
+offset_bottom = 341.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 55
+text = "-1 Life"
+
+[node name="Button4" type="Button" parent="." unique_id=1523469845]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 385.0
+offset_right = 822.0
+offset_bottom = 487.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 55
+text = "+1 Skip"
+
+[node name="Button5" type="Button" parent="." unique_id=522802814]
+layout_mode = 0
+offset_left = 990.0
+offset_top = 573.0
+offset_right = 1153.0
+offset_bottom = 649.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Skip?"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://64nnqos465vp"]
+
+[ext_resource type="Script" uid="uid://co7axxs4066en" path="res://secondquestion.gd" id="1_kvwyf"]
+
+[node name="Secondquestion" type="Control" unique_id=770006157]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kvwyf")
+
+[node name="Label" type="Label" parent="." unique_id=915414286]
+layout_mode = 0
+offset_right = 164.0
+offset_bottom = 156.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 75
+text = "2."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=581352725]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 51.0
+offset_right = 962.0
+offset_bottom = 207.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 75
+text = "Can a match box?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=966933971]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 549.0
+offset_right = 251.0
+offset_bottom = 648.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Lives: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=1174679527]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 155.0
+offset_right = 1168.0
+offset_bottom = 254.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Incorrect!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=478961547]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 263.0
+offset_right = 484.0
+offset_bottom = 385.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Yes"
+
+[node name="Button3" type="Button" parent="." unique_id=1579671356]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 419.0
+offset_right = 478.0
+offset_bottom = 565.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "No, but a
+ tin can"
+
+[node name="Button4" type="Button" parent="." unique_id=359072235]
+layout_mode = 0
+offset_left = 645.0
+offset_top = 428.0
+offset_right = 910.0
+offset_bottom = 574.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Yes, one beat
+Mike Tyson"
+
+[node name="Button2" type="Button" parent="." unique_id=1218781204]
+layout_mode = 0
+offset_left = 645.0
+offset_top = 260.0
+offset_right = 901.0
+offset_bottom = 392.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "No"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://nldgqjrrw8i5"]
+
+[ext_resource type="Script" uid="uid://bts38o0yj2x64" path="res://instructions.gd" id="1_7ls63"]
+
+[node name="Instructions" type="Control" unique_id=1244731282]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ls63")
+
+[node name="Label" type="Label" parent="." unique_id=811352961]
+layout_mode = 0
+offset_left = 345.0
+offset_top = -2.0
+offset_right = 695.0
+offset_bottom = 140.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 59
+text = "Instructions"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=831356732]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 170.0
+offset_right = 1104.0
+offset_bottom = 617.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 29
+text = "This game is heavily inspired by the Impossible Quiz. Basically try to beat 
+the quiz by answering all of the questions. However, this game has similar 
+hard questions to the original game. It requires insane logic and guessing. 
+\"It's hard, but it's NOT impossible.\"
+
+You will have 3 lives throughout the quiz. If you lose all of them it's game
+over for you.
+
+There are some mechanics similar to the original game, press more to find 
+out!"
+
+[node name="Button" type="Button" parent="." unique_id=1999674313]
+layout_mode = 0
+offset_left = -6.0
+offset_right = 231.0
+offset_bottom = 97.0
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 48
+text = "Go Back"
+
+[node name="Button2" type="Button" parent="." unique_id=1171709777]
+layout_mode = 0
+offset_left = 912.0
+offset_top = -6.0
+offset_right = 1149.0
+offset_bottom = 91.0
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 48
+text = "More"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

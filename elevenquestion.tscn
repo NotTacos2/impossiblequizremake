@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://c1jm6g7mw2373"]
+
+[ext_resource type="Script" uid="uid://c73n7dw2cpgmv" path="res://elevenquestion.gd" id="1_xaik4"]
+
+[node name="Elevenquestion" type="Control" unique_id=1284822403]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xaik4")
+
+[node name="Label" type="Label" parent="." unique_id=1342585429]
+layout_mode = 0
+offset_right = 157.0
+offset_bottom = 156.0
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 60
+text = "11."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1697833301]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 42.0
+offset_right = 920.0
+offset_bottom = 198.0
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 50
+text = "What can you put in a bucket
+to make it lighter?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=871507738]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 526.0
+offset_right = 302.0
+offset_bottom = 635.0
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 50
+text = "Lives:"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=11612484]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 185.0
+offset_right = 1110.0
+offset_bottom = 240.0
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 40
+text = "Incorrect!"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1265009771]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 228.0
+offset_right = 475.0
+offset_bottom = 338.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Gypsies"
+
+[node name="Button2" type="Button" parent="." unique_id=466005145]
+layout_mode = 0
+offset_left = 599.0
+offset_top = 230.0
+offset_right = 855.0
+offset_bottom = 340.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Torch"
+
+[node name="Button3" type="Button" parent="." unique_id=773931976]
+layout_mode = 0
+offset_left = 218.0
+offset_top = 391.0
+offset_right = 474.0
+offset_bottom = 501.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "A hole"
+
+[node name="Button4" type="Button" parent="." unique_id=1180431654]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 381.0
+offset_right = 853.0
+offset_bottom = 499.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 35
+text = "Canned 
+Laughter"
+
+[node name="Button5" type="Button" parent="." unique_id=38352282]
+layout_mode = 0
+offset_left = 942.0
+offset_top = 561.0
+offset_right = 1150.0
+offset_bottom = 649.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 35
+text = "Skip?"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

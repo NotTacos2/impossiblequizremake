@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://bo6amp08iyhc7"]
+
+[ext_resource type="Script" uid="uid://cn8xmxytai8jy" path="res://fifteenquestion.gd" id="1_2dm5a"]
+[ext_resource type="PackedScene" uid="uid://bxuumcyt8ycmf" path="res://themedtimer.tscn" id="2_yhlmn"]
+
+[node name="Fifteenquestion" type="Control" unique_id=1632947173]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2dm5a")
+
+[node name="Label" type="Label" parent="." unique_id=1350957457]
+layout_mode = 0
+offset_right = 147.0
+offset_bottom = 132.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "15."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1529847651]
+layout_mode = 0
+offset_left = 329.0
+offset_top = 4.0
+offset_right = 476.0
+offset_bottom = 136.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Watch carefully..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1686654147]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 524.0
+offset_right = 281.0
+offset_bottom = 628.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 55
+text = "Lives: "
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=6255879]
+layout_mode = 0
+offset_left = 975.0
+offset_top = 211.0
+offset_right = 1115.0
+offset_bottom = 253.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 30
+text = "Incorrect!"
+vertical_alignment = 1
+
+[node name="Themedtimer" parent="." unique_id=1167116673 instance=ExtResource("2_yhlmn")]
+position = Vector2(1023, 93)
+
+[node name="Button" type="Button" parent="." unique_id=784054832]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 237.0
+offset_right = 417.0
+offset_bottom = 336.0
+theme_override_colors/font_color = Color(0.46192616, 0.93910974, 1.540184e-06, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+
+[node name="Button5" type="Button" parent="." unique_id=1225927483]
+layout_mode = 0
+offset_left = 983.0
+offset_top = 574.0
+offset_right = 1150.0
+offset_bottom = 647.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Skip?"
+
+[node name="Button2" type="Button" parent="." unique_id=456109023]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 239.0
+offset_right = 846.0
+offset_bottom = 338.0
+theme_override_colors/font_color = Color(1, 0, 0.078431375, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+
+[node name="Button3" type="Button" parent="." unique_id=1397585331]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 411.0
+offset_right = 414.0
+offset_bottom = 510.0
+theme_override_colors/font_color = Color(1, 0, 0.078431375, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+
+[node name="Button4" type="Button" parent="." unique_id=1522162794]
+layout_mode = 0
+offset_left = 630.0
+offset_top = 412.0
+offset_right = 851.0
+offset_bottom = 511.0
+theme_override_colors/font_color = Color(1, 0, 0.078431375, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

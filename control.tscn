@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dxapyde2okyq"]
+
+[ext_resource type="Script" uid="uid://bt1q71l58crbo" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control" unique_id=1286401487]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="Label" type="Label" parent="." unique_id=555223968]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 165.0
+offset_right = 802.0
+offset_bottom = 319.0
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "The Impossible Quiz"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=564689188]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 330.0
+offset_right = 714.0
+offset_bottom = 419.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Start Game"
+
+[node name="Button3" type="Button" parent="." unique_id=290006247]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 432.0
+offset_right = 714.0
+offset_bottom = 521.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Instructions"
+
+[node name="Button2" type="Button" parent="." unique_id=189391218]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 532.0
+offset_right = 715.0
+offset_bottom = 621.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Exit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

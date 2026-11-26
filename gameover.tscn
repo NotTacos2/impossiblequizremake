@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://co2u6khsnygex"]
+
+[ext_resource type="Script" uid="uid://bll6k1s1hxq8j" path="res://gameover.gd" id="1_4nh4k"]
+
+[node name="Gameover" type="Control" unique_id=413331471]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4nh4k")
+
+[node name="Label" type="Label" parent="." unique_id=379062669]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 198.0
+offset_right = 749.0
+offset_bottom = 368.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 60
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=362836288]
+layout_mode = 0
+offset_left = 404.0
+offset_top = 341.0
+offset_right = 698.0
+offset_bottom = 470.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Try Again?"
+
+[node name="Button2" type="Button" parent="." unique_id=1289299478]
+layout_mode = 0
+offset_left = 403.0
+offset_top = 489.0
+offset_right = 697.0
+offset_bottom = 618.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 50
+text = "Nah"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

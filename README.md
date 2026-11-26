@@ -9,7 +9,10 @@ This is a short remake of the game The Impossible Quiz in Godot.
 - Lives system
 - Unique mechanics in some questions that will need you to think outside of the box.
 
-# How do I build this
+# How do I play this?
+[Itch.io](https://nottacos3.itch.io/impossible-quiz-remake)
+
+# How do I build this?
 Put it into godot engine and there you go!
 
 # Original game
